@@ -18,6 +18,20 @@ public class CardView : MonoBehaviour, IPointerClickHandler
     public CardData cardData { get; private set; }
     public bool isChosen { get; private set; }
 
+    void Awake()
+    {
+
+        transform.eulerAngles = new Vector3(0, 90, 0);
+    }
+
+    IEnumerator Start()
+    {
+        yield return new WaitForSeconds(Random.Range(0, 0.5f));
+
+        transform.DORotate(new Vector3(0, 0, 0), .3f);
+        transform.DOPunchScale(Vector3.one * .1f, .3f);
+    }
+
     public void SetCardView(CardData card, bool isSub, bool isClickable)
     {
         this.isClickable = isClickable;
@@ -69,5 +83,22 @@ public class CardView : MonoBehaviour, IPointerClickHandler
                 Deck.SubmitAction(cardData);
                 break;
         }
+        DestroyMe();
+    }
+
+    public void DestroyMe()
+    {
+        StartCoroutine(DestroyMeCr());
+    }
+
+    IEnumerator DestroyMeCr()
+    {
+        //yield return new WaitForSeconds(Random.Range(0, 0.5f));
+
+        transform.DORotate(new Vector3(0, -90, 0), .3f);
+
+        yield return new WaitForSeconds(.3f);
+
+        Destroy(gameObject);
     }
 }

@@ -109,8 +109,8 @@ public class CardSpawner : MonoBehaviour
         {
             if (_spawnedCards[i].isChosen)
                 _spawnedCards[i].SubmitMe(currentWhere);
-                
-            Destroy(_spawnedCards[i].gameObject);
+            else
+                _spawnedCards[i].DestroyMe();
         }
         _spawnedCards.Clear();
     }

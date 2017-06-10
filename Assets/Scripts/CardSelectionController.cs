@@ -59,8 +59,14 @@ public class CardSelectionController : MonoBehaviour
     // Choose Bondage State
     void ChooseBondageStart()
     {
+        StartCoroutine(BondageStartCr());
+    }
+
+    IEnumerator BondageStartCr()
+    {
         TitleText.text = "Choose Your Bondage";
         _spawner.ClearCards();
+        yield return new WaitForSeconds(.6f);
         _spawner.Spawn(0, false, 3);
     }
 
@@ -77,8 +83,14 @@ public class CardSelectionController : MonoBehaviour
     // Choose Actions State
     void ChooseActionStart()
     {
+        StartCoroutine(ActionStartCr());
+    }
+
+    IEnumerator ActionStartCr()
+    {
         TitleText.text = "Choose Your Actions";
         _spawner.ClearCards();
+        yield return new WaitForSeconds(.6f);
         _spawner.Spawn(2, false, 3);
     }
 

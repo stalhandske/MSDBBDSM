@@ -24,10 +24,12 @@ public class TitleScreenController : MonoBehaviour
 
     public void PressPlay()
     {
-    	// Go to Disclaimer
-    	// Hide TitleText and Play Button
-    	ShowTitleScreenUI(false);
-    	ShowDisclaimerUI(true);
+        SceneManager.LoadScene("2 - ChooseYourTouchesNew");
+
+        // Go to Disclaimer
+        // Hide TitleText and Play Button
+     //   ShowTitleScreenUI(false);
+    	//ShowDisclaimerUI(true);
     }
 
     public void Consent()
