@@ -15,7 +15,6 @@ public class TitleScreenController : MonoBehaviour
 
     void Start()
     {
-		ShowDisclaimerUI(false);
     }
 	
     void Update()
