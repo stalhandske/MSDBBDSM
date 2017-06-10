@@ -1,92 +1,148 @@
 {
     "actionCards": [
         {
-            "title": "Action 1",
-            "subInstructions": "Action sub instructions 1",
-            "domInstructions": "Action dom instructions 1",
-            "flavor": "Action flavor text 1",
+            "title": "Hand-holding",
+            "subInstructions": "Your Dom will hold your hand for a short time.",
+            "domInstructions": "Stand next to your Sub and hold their hand for as long as you both feel comfortable.",
+            "flavor": "",
             "intensity": 0
         },
         {
-            "title": "Action 2",
-            "subInstructions": "Action sub instructions 2",
-            "domInstructions": "Action dom instructions 2",
-            "flavor": "Action flavor text 2",
+            "title": "Forearm Pinch",
+            "subInstructions": "Your Dom will gently pinch your forearm.",
+            "domInstructions": "Pinch your Sub's forearm, firmly but not painfully.",
+            "flavor": "",
             "intensity": 0
-        },
+        }
         {
-            "title": "Action 3",
-            "subInstructions": "Action sub instructions 3",
-            "domInstructions": "Action dom instructions 3",
-            "flavor": "Action flavor text 3",
+            "title": "Hair-patting",
+            "subInstructions": "Your Dom will gently pat your hair or head.",
+            "domInstructions": "Whisper 'pat, pat,' and softly pat your Sub's hair or head a few times.",
+            "flavor": "",
             "intensity": 0
-        },
+        }
         {
-            "title": "Action 4",
-            "subInstructions": "Action sub instructions 4",
-            "domInstructions": "Action dom instructions 4",
-            "flavor": "Action flavor text 4",
+            "title": "Knee Touch",
+            "subInstructions": "Your Dom will briefly touch your left knee.",
+            "domInstructions": "Touch your Sub's left knee. Kneel if it's more comfortable.",
+            "flavor": "",
+            "intensity": 0
+        }
+        {
+            "title": "Neaten Clothing",
+            "subInstructions": "Your Dom will neaten up an item of your clothing, such as for creases.",
+            "domInstructions": "Neaten a fold or crease in your Sub's clothing. If there is none, pretend.",
+            "flavor": "",
+            "intensity": 1
+        }
+        {
+            "title": "Arm Touch",
+            "subInstructions": "A sanctioned prop or body part will be drawn across your arm.",
+            "domInstructions": "Draw a prop (or sanctioned body part) up and down your Sub's arm a few times.",
+            "flavor": "",
+            "intensity": 1
+        }
+        {
+            "title": "Collar Tap",
+            "subInstructions": "Your Dom will gently tap your collar bone.",
+            "domInstructions": "Whisper 'tap, tap,' and gently tap your Sub's collar bone. Try a few different places on their collar.",
+            "flavor": "",
+            "intensity": 1
+        }
+        {
+            "title": "Humming",
+            "subInstructions": "You will hear a softly hummed tune.",
+            "domInstructions": "Hum a soft tune - or whatever upbeat tune you can think of, but slowly.",
+            "flavor": "",
+            "intensity": 0
+        }
+        {
+            "title": "Cheek-blowing",
+            "subInstructions": "Your Dom will gently blow air across your cheek.",
+            "domInstructions": "Take a deep breath and gently blow air onto your Sub's cheek.",
+            "flavor": "",
+            "intensity": 1
+        }
+        {
+            "title": "Finger Caress",
+            "subInstructions": "Your Dom will gently caress your fingers.",
+            "domInstructions": "Rest your Sub's hand in your own, and use the other to gently caress their fingers.",
+            "flavor": "",
+            "intensity": 2
+        }
+        {
+            "title": "Just Smile",
+            "subInstructions": "Your Dom will smile at you, removing the blindfold if one was sanctioned.",
+            "domInstructions": "Tell the sub that you will remove the blindfold for a moment now.",
+            "flavor": "",
+            "intensity": 0
+        }
+        {
+            "title": "Enjoy the Silence",
+            "subInstructions": "On the cue of being hushed, you and your Dom will share a maintained silence of around 30 seconds.",
+            "domInstructions": "Make an audible and visible "shh" gesture, to the sub and anyone who may be in the room. Maintain a silence for at least 30 seconds.",
+            "flavor": "",
             "intensity": 0
         }
     ],
     "bondageCards": [
         {
-            "title": "Bondage 1",
-            "subInstructions": "Bondage sub instructions 1",
-            "domInstructions": "Bondage dom instructions 1",
-            "flavor": "Bondage flavor text 1",
-            "intensity": 0
+            "title": "Blindfold",
+            "subInstructions": "Consent to being blindfolded during your experience.",
+            "domInstructions": "dom instructions",
+            "flavor": "",
+            "intensity": 1
         },
         {
-            "title": "Bondage 2",
-            "subInstructions": "Bondage sub instructions 2",
-            "domInstructions": "Bondage dom instructions 2",
-            "flavor": "Bondage flavor text 2",
-            "intensity": 0
-        },
-		{
-            "title": "Bondage 3",
-            "subInstructions": "Bondage sub instructions 3",
-            "domInstructions": "Bondage dom instructions 3",
-            "flavor": "Bondage flavor text 3",
-            "intensity": 0
-        },
-		{
-            "title": "Bondage 4",
-            "subInstructions": "Bondage sub instructions 4",
-            "domInstructions": "Bondage dom instructions 4",
-            "flavor": "Bondage flavor text 4",
-            "intensity": 0
+            "title": "Audio Isolation",
+            "subInstructions": "Consent to having sounds quietened by earplugs or noise-cancelling earphones. It's best if you can provide your own.",
+            "domInstructions": "dom instructions",
+            "flavor": "",
+            "intensity": 1
+        }
+        {
+            "title": "Wrist Binding",
+            "subInstructions": "Consent to having your wrists comfortably bound.",
+            "domInstructions": "Your Sub has consented to having their wrists bound. Check that any binding is comfortable for them.",
+            "flavor": "",
+            "intensity": 2
+        }
+        {
+            "title": "Ankle Binding",
+            "subInstructions": "Consent to having your ankles comfortably bound.",
+            "domInstructions": "Your Sub has consented to having their ankles bound. Check that any binding is comfortable for them.",
+            "flavor": "",
+            "intensity": 2
         }
     ],
     "touchCards": [
         {
-            "title": "Touch 1",
-            "subInstructions": "Touch sub instructions 1",
-            "domInstructions": "Touch dom instructions 1",
-            "flavor": "Touch flavor text 1",
+            "title": "Pen",
+            "subInstructions": "Consent to your Dom touching you with the end of a lid-capped pen (not with the exposed nib).",
+            "domInstructions": "Your Sub has consented to touch with the end of a lid-capped pen (not an exposed nib).",
+            "flavor": "",
             "intensity": 0
         },
         {
-            "title": "Touch 2",
-            "subInstructions": "Touch sub instructions 2",
-            "domInstructions": "Touch dom instructions 2",
-            "flavor": "Touch flavor text 2",
-            "intensity": 0
+            "title": "Feather",
+            "subInstructions": "Consent to your Dom touching you with a feather.",
+            "domInstructions": "Your Sub has consented to you using a feather to touch them.",
+            "flavor": "",
+            "intensity": 1
         },
-		{
-            "title": "Touch 3",
-            "subInstructions": "Touch sub instructions 3",
-            "domInstructions": "Touch dom instructions 3",
-            "flavor": "Touch flavor text 3",
-            "intensity": 0
+        {
+            "title": "Hand",
+            "subInstructions": "Consent to your Dom touching you with their bare hands and fingers.",
+            "domInstructions": "Your Sub has consented to you using your hands and fingers to touch them.",
+            "flavor": "",
+            "intensity": 1
         },
-		{
-            "title": "Touch 4",
-            "subInstructions": "Touch sub instructions 4",
-            "domInstructions": "Touch dom instructions 4",
-            "flavor": "Touch flavor text 4",
-            "intensity": 0
+        {
+            "title": "Tongue",
+            "subInstructions": "Consent to your Dom using their tongue to touch you.",
+            "domInstructions": "Your Sub has consented to you using your tongue to touch them.",
+            "flavor": "",
+            "intensity": 2
         }
     ]
 }
