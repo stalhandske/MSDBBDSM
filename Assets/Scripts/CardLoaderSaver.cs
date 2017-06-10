@@ -28,6 +28,15 @@ public static class CardLoaderSaver
         return libraryData;
     }
 
+    public static LibraryData LoadLibraryFromResources()
+    {
+        LibraryData libraryData;
+
+        libraryData = JsonUtility.FromJson<LibraryData>(Resources.Load<TextAsset>("cards").text);
+
+        return libraryData;
+    }
+
     public static void SaveLibrary(LibraryData libraryData)
     {
         Directory.CreateDirectory(GetDirectory());
