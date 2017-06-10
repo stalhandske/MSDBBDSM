@@ -38,7 +38,7 @@ public class CardView : MonoBehaviour, IPointerClickHandler
         _childRectTransform.DOAnchorMax(startMax, .6f).SetEase(Ease.OutBack);
         _childRectTransform.DOAnchorMin(startMin, .6f).SetEase(Ease.OutBack);
         yield return new WaitForSeconds(Random.Range(.0f, .2f));
-        transform.DORotate(new Vector3(0, 1, 0), 1f).SetEase(Ease.OutFlash);
+        transform.DORotate(new Vector3(0, 1, 0), .6f).SetEase(Ease.OutFlash);
         
         //transform.DOPunchScale(Vector3.one * .1f, .2f);
     }
@@ -106,9 +106,28 @@ public class CardView : MonoBehaviour, IPointerClickHandler
     {
         //yield return new WaitForSeconds(Random.Range(0, 0.5f));
 
-        transform.DORotate(new Vector3(0, -90, 0), .3f);
+        Vector2 startMax = _childRectTransform.anchorMax;
+        Vector2 startMin = _childRectTransform.anchorMin;
+        Vector2 newMax = startMax;
+        Vector2 newMin = startMin;
 
-        yield return new WaitForSeconds(.3f);
+        if (isChosen)
+        {
+            newMax.y += 1.5f;
+            newMin.y += 1.5f;
+        }
+        else
+        {
+            newMax.y -= 1.5f;
+            newMin.y -= 1.5f;
+        }
+        
+        _childRectTransform.DOAnchorMax(newMax, .6f).SetEase(Ease.InBack);
+        _childRectTransform.DOAnchorMin(newMin, .6f).SetEase(Ease.InBack);
+
+        if (!isChosen) transform.DORotate(new Vector3(0, -90, 0), .6f);
+
+        yield return new WaitForSeconds(.6f);
 
         Destroy(gameObject);
     }
