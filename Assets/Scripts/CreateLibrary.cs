@@ -14,28 +14,32 @@ public class CreateLibrary : MonoBehaviour {
 
         CardData cardData = new CardData();
         cardData.title = "title text";
-        cardData.text = "action text";
+        cardData.subInstructions = "sub instructions";
+        cardData.domInstructions = "dom instructions";
         cardData.intensity = 0;
         cardData.flavor = "flavor text";
 
         libraryData.actionCards.Add(cardData);
-
+        libraryData.actionCards.Add(cardData);
 
         cardData = new CardData();
         cardData.title = "title text";
-        cardData.text = "touch text";
+        cardData.subInstructions = "sub instructions";
+        cardData.domInstructions = "dom instructions";
         cardData.intensity = 0;
         cardData.flavor = "flavor text";
 
         libraryData.touchCards.Add(cardData);
-
+        libraryData.touchCards.Add(cardData);
 
         cardData = new CardData();
         cardData.title = "title text";
-        cardData.text = "bondage text";
+        cardData.subInstructions = "sub instructions";
+        cardData.domInstructions = "dom instructions";
         cardData.intensity = 0;
         cardData.flavor = "flavor text";
 
+        libraryData.bondageCards.Add(cardData);
         libraryData.bondageCards.Add(cardData);
 
         CardLoaderSaver.SaveLibrary(libraryData);

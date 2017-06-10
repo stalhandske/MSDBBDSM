@@ -2,13 +2,15 @@
     "actionCards": [
         {
             "title": "title text",
-            "text": "action text",
+            "subInstructions": "sub instructions",
+            "domInstructions": "dom instructions",
             "flavor": "flavor text",
             "intensity": 0
         },
-		{
+        {
             "title": "title text",
-            "text": "action text",
+            "subInstructions": "sub instructions",
+            "domInstructions": "dom instructions",
             "flavor": "flavor text",
             "intensity": 0
         }
@@ -16,13 +18,15 @@
     "bondageCards": [
         {
             "title": "title text",
-            "text": "bondage text",
+            "subInstructions": "sub instructions",
+            "domInstructions": "dom instructions",
             "flavor": "flavor text",
             "intensity": 0
         },
-		{
+        {
             "title": "title text",
-            "text": "bondage text",
+            "subInstructions": "sub instructions",
+            "domInstructions": "dom instructions",
             "flavor": "flavor text",
             "intensity": 0
         }
@@ -30,13 +34,15 @@
     "touchCards": [
         {
             "title": "title text",
-            "text": "touch text",
+            "subInstructions": "sub instructions",
+            "domInstructions": "dom instructions",
             "flavor": "flavor text",
             "intensity": 0
         },
-		{
+        {
             "title": "title text",
-            "text": "touch text",
+            "subInstructions": "sub instructions",
+            "domInstructions": "dom instructions",
             "flavor": "flavor text",
             "intensity": 0
         }
