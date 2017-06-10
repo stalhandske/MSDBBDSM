@@ -4,7 +4,20 @@ using UnityEngine;
 
 public class CardSpawner : MonoBehaviour {
 
+    [Header("Draw from deck or library")]
+    public bool fromDeck;
 
+    [Header("Draw count if from library")]
+    public int drawCount;
+
+    [Header("Choose types of cards")]
+    public bool fromTouches;
+    public bool fromBondages;
+    public bool fromActions;
+
+    [Header("Card prefab properties")]
+    public bool isSub;
+    public bool isClickable;
 
     [Header("References")]
     public Transform cardParent;
@@ -14,9 +27,18 @@ public class CardSpawner : MonoBehaviour {
     
 	void Start ()
     {
-        InstantiateDeck(Deck.deckActions);
-        InstantiateDeck(Deck.deckBondages);
-        InstantiateDeck(Deck.deckTouches);
+        if (fromDeck)
+        {
+            if (fromBondages) InstantiateDeck(Deck.deckBondages);
+            if (fromTouches) InstantiateDeck(Deck.deckTouches);
+            if (fromActions) InstantiateDeck(Deck.deckActions);
+        }
+        else
+        {
+            if (fromBondages) InstantiateDeck(LibraryManager.DrawBondages(drawCount));
+            if (fromTouches) InstantiateDeck(LibraryManager.DrawTouches(drawCount));
+            if (fromActions) InstantiateDeck(LibraryManager.DrawActions(drawCount));
+        }
     }
 
     void InstantiateDeck(List<CardData> deck)
@@ -25,7 +47,7 @@ public class CardSpawner : MonoBehaviour {
         foreach(CardData card in deck)
         {
             GameObject cardGO = Instantiate(cardPrefab, cardParent);
-            cardGO.GetComponent<CardView>().SetCardView(card);
+            cardGO.GetComponent<CardView>().SetCardView(card,isSub, isClickable);
         }
     }
     
