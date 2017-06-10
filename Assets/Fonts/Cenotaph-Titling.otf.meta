@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: bd71f8f0946e84ac899b63c321215652
+timeCreated: 1497116687
+licenseType: Free
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Cenotaph
+  fontNames:
+  - Cenotaph
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
