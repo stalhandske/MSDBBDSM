@@ -1,49 +1,91 @@
 {
     "actionCards": [
         {
-            "title": "title text",
-            "subInstructions": "sub instructions",
-            "domInstructions": "dom instructions",
-            "flavor": "flavor text",
+            "title": "Action 1",
+            "subInstructions": "Action sub instructions 1",
+            "domInstructions": "Action dom instructions 1",
+            "flavor": "Action flavor text 1",
             "intensity": 0
         },
         {
-            "title": "title text",
-            "subInstructions": "sub instructions",
-            "domInstructions": "dom instructions",
-            "flavor": "flavor text",
+            "title": "Action 2",
+            "subInstructions": "Action sub instructions 2",
+            "domInstructions": "Action dom instructions 2",
+            "flavor": "Action flavor text 2",
+            "intensity": 0
+        },
+        {
+            "title": "Action 3",
+            "subInstructions": "Action sub instructions 3",
+            "domInstructions": "Action dom instructions 3",
+            "flavor": "Action flavor text 3",
+            "intensity": 0
+        },
+        {
+            "title": "Action 4",
+            "subInstructions": "Action sub instructions 4",
+            "domInstructions": "Action dom instructions 4",
+            "flavor": "Action flavor text 4",
             "intensity": 0
         }
     ],
     "bondageCards": [
         {
-            "title": "title text",
-            "subInstructions": "sub instructions",
-            "domInstructions": "dom instructions",
-            "flavor": "flavor text",
+            "title": "Bondage 1",
+            "subInstructions": "Bondage sub instructions 1",
+            "domInstructions": "Bondage dom instructions 1",
+            "flavor": "Bondage flavor text 1",
             "intensity": 0
         },
         {
-            "title": "title text",
-            "subInstructions": "sub instructions",
-            "domInstructions": "dom instructions",
-            "flavor": "flavor text",
+            "title": "Bondage 2",
+            "subInstructions": "Bondage sub instructions 2",
+            "domInstructions": "Bondage dom instructions 2",
+            "flavor": "Bondage flavor text 2",
+            "intensity": 0
+        },
+		{
+            "title": "Bondage 3",
+            "subInstructions": "Bondage sub instructions 3",
+            "domInstructions": "Bondage dom instructions 3",
+            "flavor": "Bondage flavor text 3",
+            "intensity": 0
+        },
+		{
+            "title": "Bondage 4",
+            "subInstructions": "Bondage sub instructions 4",
+            "domInstructions": "Bondage dom instructions 4",
+            "flavor": "Bondage flavor text 4",
             "intensity": 0
         }
     ],
     "touchCards": [
         {
-            "title": "title text",
-            "subInstructions": "sub instructions",
-            "domInstructions": "dom instructions",
-            "flavor": "flavor text",
+            "title": "Touch 1",
+            "subInstructions": "Touch sub instructions 1",
+            "domInstructions": "Touch dom instructions 1",
+            "flavor": "Touch flavor text 1",
             "intensity": 0
         },
         {
-            "title": "title text",
-            "subInstructions": "sub instructions",
-            "domInstructions": "dom instructions",
-            "flavor": "flavor text",
+            "title": "Touch 2",
+            "subInstructions": "Touch sub instructions 2",
+            "domInstructions": "Touch dom instructions 2",
+            "flavor": "Touch flavor text 2",
+            "intensity": 0
+        },
+		{
+            "title": "Touch 3",
+            "subInstructions": "Touch sub instructions 3",
+            "domInstructions": "Touch dom instructions 3",
+            "flavor": "Touch flavor text 3",
+            "intensity": 0
+        },
+		{
+            "title": "Touch 4",
+            "subInstructions": "Touch sub instructions 4",
+            "domInstructions": "Touch dom instructions 4",
+            "flavor": "Touch flavor text 4",
             "intensity": 0
         }
     ]
