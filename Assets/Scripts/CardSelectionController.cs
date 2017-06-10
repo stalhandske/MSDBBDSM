@@ -112,6 +112,7 @@ public class CardSelectionController : MonoBehaviour
                     else
                     {
                         print(Deck.deckTouches.Count + " - " + Deck.deckTouches[0].title);
+                        _stateMachine.CurrentState = CardSelectionState.ChooseAction;
                         SceneManager.LoadScene("4 - SubReview");
                     }
                 }
