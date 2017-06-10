@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
 	public bool SubViewDone;
-	
+
 	private static GameManager _instance;
     public static GameManager Instance
     {
@@ -44,5 +45,10 @@ public class GameManager : MonoBehaviour
     void Update()
     {
 		
+    }
+
+    public void GoToScene(string scene)
+    {
+    	SceneManager.LoadScene(scene);
     }
 }
