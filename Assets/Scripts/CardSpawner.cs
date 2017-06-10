@@ -18,16 +18,20 @@ public class CardSpawner : MonoBehaviour
     [Header("Card prefab properties")]
     public bool isSub;
     public bool isClickable;
+    public bool exclusiveSelection;
 
     [Header("References")]
     public Transform cardParent;
 
     [Header("Prefabs")]
     public GameObject cardPrefab;
-    
-    void Start()
-    {
 
+    List<CardView> _spawnedCards;
+    int currentWhere;
+
+    void Awake()
+    {
+        _spawnedCards = new List<CardView>();
     }
 
     void Update()
@@ -66,6 +70,7 @@ public class CardSpawner : MonoBehaviour
     // 2 - actions
     public void Spawn(int fromWhere, bool deck, int count)
     {
+        currentWhere = fromWhere;
         switch (fromWhere)
         {
             case 0:
@@ -99,10 +104,12 @@ public class CardSpawner : MonoBehaviour
         
     public void ClearCards()
     {
-        for (int i = 0; i < cardParent.childCount; i++)
+        for (int i = 0; i < _spawnedCards.Count; i++)
         {
-            Destroy(cardParent.GetChild(i).gameObject);
+            _spawnedCards[i].SubmitMe(currentWhere);
+            Destroy(_spawnedCards[i].gameObject);
         }
+        _spawnedCards.Clear();
     }
 
     void InstantiateDeck(List<CardData> deck)
@@ -111,8 +118,24 @@ public class CardSpawner : MonoBehaviour
         foreach (CardData card in deck)
         {
             GameObject cardGO = Instantiate(cardPrefab, cardParent);
-            cardGO.GetComponent<CardView>().SetCardView(card, isSub, isClickable);
+            CardView cardView = cardGO.GetComponent<CardView>();
+            cardView.SetCardView(card, isSub, isClickable);
+            _spawnedCards.Add(cardView);
+            cardView.OnSelect += HandleSelect;
         }
     }
     
+    public void HandleSelect(CardData cardData)
+    {
+        if (exclusiveSelection)
+        {
+            foreach (CardView cardView in _spawnedCards)
+            {
+                if (cardView.cardData!=cardData && cardView.isChosen)
+                {
+                    cardView.Click();
+                }
+            }
+        }
+    }
 }
