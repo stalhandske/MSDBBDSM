@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class CardSpawner : MonoBehaviour
 {
-
     [Header("Draw from deck or library")]
     public bool fromDeck;
 
