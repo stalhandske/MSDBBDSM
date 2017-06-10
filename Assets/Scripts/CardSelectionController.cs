@@ -3,35 +3,39 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using Gamelogic;
+using UnityEngine.SceneManagement;
 
 public class CardSelectionController : MonoBehaviour
 {
-	public enum CardSelectionState
-	{
-		ChooseTouch,
-		ChooseBondage,
-		ChooseAction
-	}
+    public enum CardSelectionState
+    {
+        ChooseTouch,
+        ChooseBondage,
+        ChooseAction
+    }
 
-	public Text TitleText;
+    public Text TitleText;
+    public int NumActionCards = 4;
 
-	private StateMachine<CardSelectionState> _stateMachine;
+    private StateMachine<CardSelectionState> _stateMachine;
     private CardSpawner _spawner;
+    [SerializeField]
+    private int _actionCardsSelected;
 
     void Start()
     {
         _spawner = FindObjectOfType<CardSpawner>();
 
-		_stateMachine = new StateMachine<CardSelectionState>();	
-		_stateMachine.AddState(CardSelectionState.ChooseBondage, ChooseBondageStart, ChooseBondageUpdate, ChooseBondageStop);
-		_stateMachine.AddState(CardSelectionState.ChooseTouch, ChooseTouchStart, ChooseTouchUpdate, ChooseTouchStop);
-		_stateMachine.AddState(CardSelectionState.ChooseAction, ChooseActionStart, ChooseActionUpdate, ChooseActionStop);
-		_stateMachine.CurrentState = CardSelectionState.ChooseTouch;
+        _stateMachine = new StateMachine<CardSelectionState>(); 
+        _stateMachine.AddState(CardSelectionState.ChooseBondage, ChooseBondageStart, ChooseBondageUpdate, ChooseBondageStop);
+        _stateMachine.AddState(CardSelectionState.ChooseTouch, ChooseTouchStart, ChooseTouchUpdate, ChooseTouchStop);
+        _stateMachine.AddState(CardSelectionState.ChooseAction, ChooseActionStart, ChooseActionUpdate, ChooseActionStop);
+        _stateMachine.CurrentState = CardSelectionState.ChooseTouch;
     }
-	
+    
     void Update()
     {
-		_stateMachine.Update();
+        _stateMachine.Update();
     }
 
     // Choose Touches State
@@ -101,7 +105,16 @@ public class CardSelectionController : MonoBehaviour
                 break;
 
             case CardSelectionState.ChooseAction:
-                _stateMachine.CurrentState = CardSelectionState.ChooseAction;
+                {
+                    _actionCardsSelected++;   
+                    if (_actionCardsSelected < 4)
+                        _stateMachine.CurrentState = CardSelectionState.ChooseAction;
+                    else
+                    {
+                        print(Deck.deckTouches.Count + " - " + Deck.deckTouches[0].title);
+                        SceneManager.LoadScene("4 - SubReview");
+                    }
+                }
                 break;
         }
     }

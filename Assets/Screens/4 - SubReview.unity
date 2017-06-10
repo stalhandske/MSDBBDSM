@@ -745,7 +745,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.11472887, y: 0}
+  m_AnchoredPosition: {x: -0.114746094, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1622405020
@@ -868,13 +868,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f187d0f98831f458892372b8f1539b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fromDeck: 0
+  SpawnOnStart: 1
+  fromDeck: 1
   drawCount: 0
-  fromTouches: 0
-  fromBondages: 0
-  fromActions: 0
+  fromTouches: 1
+  fromBondages: 1
+  fromActions: 1
   isSub: 1
   isClickable: 0
+  exclusiveSelection: 0
   cardParent: {fileID: 1622405019}
   cardPrefab: {fileID: 1306611261471500, guid: bbe8545e268d54cc58e69e7426f47df0, type: 2}
 --- !u!1 &1869186477

@@ -889,6 +889,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   TitleText: {fileID: 525936773}
+  NumActionCards: 4
+  _actionCardsSelected: 0
 --- !u!4 &1786133381
 Transform:
   m_ObjectHideFlags: 0
@@ -987,6 +989,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b8f187d0f98831f458892372b8f1539b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  SpawnOnStart: 0
   fromDeck: 0
   drawCount: 2
   fromTouches: 0

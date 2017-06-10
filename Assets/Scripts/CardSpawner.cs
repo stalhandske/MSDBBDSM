@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CardSpawner : MonoBehaviour
 {
+    public bool SpawnOnStart;
+
     [Header("Draw from deck or library")]
     public bool fromDeck;
 
@@ -32,15 +34,14 @@ public class CardSpawner : MonoBehaviour
     void Awake()
     {
         _spawnedCards = new List<CardView>();
+
+        if (SpawnOnStart)
+            Spawn();
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.O))
-        {
-            ClearCards();
-            Spawn(0, false, 3);
-        }
+
     }
 
     public void Spawn()
@@ -106,7 +107,9 @@ public class CardSpawner : MonoBehaviour
     {
         for (int i = 0; i < _spawnedCards.Count; i++)
         {
-            _spawnedCards[i].SubmitMe(currentWhere);
+            if (_spawnedCards[i].isChosen)
+                _spawnedCards[i].SubmitMe(currentWhere);
+                
             Destroy(_spawnedCards[i].gameObject);
         }
         _spawnedCards.Clear();
@@ -131,7 +134,7 @@ public class CardSpawner : MonoBehaviour
         {
             foreach (CardView cardView in _spawnedCards)
             {
-                if (cardView.cardData!=cardData && cardView.isChosen)
+                if (cardView.cardData != cardData && cardView.isChosen)
                 {
                     cardView.Click();
                 }
