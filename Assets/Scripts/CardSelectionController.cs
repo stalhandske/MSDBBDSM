@@ -14,12 +14,14 @@ public class CardSelectionController : MonoBehaviour
 	}
 
 	public Text TitleText;
-	public CardView Cards;
 
 	private StateMachine<CardSelectionState> _stateMachine;
+    private CardSpawner _spawner;
 
     void Start()
     {
+        _spawner = FindObjectOfType<CardSpawner>();
+
 		_stateMachine = new StateMachine<CardSelectionState>();	
 		_stateMachine.AddState(CardSelectionState.ChooseBondage, ChooseBondageStart, ChooseBondageUpdate, ChooseBondageStop);
 		_stateMachine.AddState(CardSelectionState.ChooseTouch, ChooseTouchStart, ChooseTouchUpdate, ChooseTouchStop);
@@ -35,7 +37,9 @@ public class CardSelectionController : MonoBehaviour
     // Choose Touches State
     void ChooseTouchStart()
     {
-
+        TitleText.text = "Choose Your Touches";
+        _spawner.ClearCards();
+        _spawner.Spawn(1, false, 3);
     }
 
     void ChooseTouchUpdate()
@@ -51,7 +55,9 @@ public class CardSelectionController : MonoBehaviour
     // Choose Bondage State
     void ChooseBondageStart()
     {
-
+        TitleText.text = "Choose Your Bondage";
+        _spawner.ClearCards();
+        _spawner.Spawn(0, false, 3);
     }
 
     void ChooseBondageUpdate()
@@ -67,7 +73,9 @@ public class CardSelectionController : MonoBehaviour
     // Choose Actions State
     void ChooseActionStart()
     {
-
+        TitleText.text = "Choose Your Actions";
+        _spawner.ClearCards();
+        _spawner.Spawn(2, false, 3);
     }
 
     void ChooseActionUpdate()
@@ -78,5 +86,23 @@ public class CardSelectionController : MonoBehaviour
     void ChooseActionStop()
     {
 
+    }
+
+    public void ConsentButtonPressed()
+    {
+        switch (_stateMachine.CurrentState)
+        {
+            case CardSelectionState.ChooseTouch:
+                _stateMachine.CurrentState = CardSelectionState.ChooseBondage;
+                break;
+
+            case CardSelectionState.ChooseBondage:
+                _stateMachine.CurrentState = CardSelectionState.ChooseAction;
+                break;
+
+            case CardSelectionState.ChooseAction:
+                _stateMachine.CurrentState = CardSelectionState.ChooseAction;
+                break;
+        }
     }
 }
