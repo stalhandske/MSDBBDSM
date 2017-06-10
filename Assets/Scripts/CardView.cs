@@ -3,26 +3,22 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class CardView
+public class CardView : MonoBehaviour
 {
-	public Text title;
-    public Text subInstructions;
-    public Text domInstructions;
+    public Text title;
+    public Text instructions;
     public Text flavor;
+    public bool isSub;
 
-    public CardView()
+    public void Start()
     {
-    	title.text = "Title";
-    	subInstructions.text = "Sub Instructions";
-    	domInstructions.text = "Dom Instructions";
-    	flavor.text = "Flavor";
+
     }
 
-    public void SetCardView()
+    public void SetCardView(CardData card)
     {
-    	title.text = "Title";
-    	subInstructions.text = "Sub Instructions";
-    	domInstructions.text = "Dom Instructions";
-    	flavor.text = "Flavor";
+        title.text = card.title;
+        instructions.text = isSub ? card.subInstructions : card.domInstructions;
+        flavor.text = card.flavor;
     }
 }
