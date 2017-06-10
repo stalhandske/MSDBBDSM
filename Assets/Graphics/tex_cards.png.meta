@@ -1,13 +1,14 @@
 fileFormatVersion: 2
 guid: 434c7e8adcda340e18a46094d3c474d1
-timeCreated: 1497124006
+timeCreated: 1497126673
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: tex_card_front
-    21300002: tex_cards_0
+    21300002: tex_card_front
     21300004: heart_arrow
     21300006: heart_indicator
+    21300008: tex_card_back
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -82,10 +83,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: tex_cards_0
+      name: tex_card_front
       rect:
         serializedVersion: 2
         x: 10
+        y: 644
+        width: 998
+        height: 1390
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: tex_card_back
+      rect:
+        serializedVersion: 2
+        x: 1024
         y: 644
         width: 998
         height: 1390
