@@ -15,6 +15,9 @@ public class CardView : MonoBehaviour, IPointerClickHandler
     public bool isSub;
     public bool isClickable;
 
+    [Header("References")]
+    public Image heartImage;
+
     public CardData cardData { get; private set; }
     public bool isChosen { get; private set; }
 
@@ -34,10 +37,10 @@ public class CardView : MonoBehaviour, IPointerClickHandler
         _childRectTransform.anchorMax = newMax;
         _childRectTransform.anchorMin = newMin;
 
-        yield return new WaitForSeconds(Random.Range(0, 0.5f));
-        _childRectTransform.DOAnchorMax(startMax, .6f).SetEase(Ease.OutBack);
-        _childRectTransform.DOAnchorMin(startMin, .6f).SetEase(Ease.OutBack);
-        yield return new WaitForSeconds(Random.Range(.0f, .2f));
+        yield return new WaitForSeconds(Random.Range(0, 0.05f));
+        _childRectTransform.DOAnchorMax(startMax, .6f).SetEase(Ease.OutQuad);
+        _childRectTransform.DOAnchorMin(startMin, .6f).SetEase(Ease.OutQuad);
+        yield return new WaitForSeconds(Random.Range(.5f, .6f));
         transform.DORotate(new Vector3(0, 1, 0), .6f).SetEase(Ease.OutFlash);
         
         //transform.DOPunchScale(Vector3.one * .1f, .2f);
@@ -76,6 +79,8 @@ public class CardView : MonoBehaviour, IPointerClickHandler
             transform.DOMoveY(transform.position.y + 25, .2f);
             isChosen = true;
         }
+
+        heartImage.enabled = isChosen;
     }
 
     public void SubmitMe(int toWhere)
@@ -113,8 +118,8 @@ public class CardView : MonoBehaviour, IPointerClickHandler
 
         if (isChosen)
         {
-            newMax.y += 1.5f;
-            newMin.y += 1.5f;
+            newMax.y += 1.7f;
+            newMin.y += 1.7f;
         }
         else
         {
@@ -122,8 +127,8 @@ public class CardView : MonoBehaviour, IPointerClickHandler
             newMin.y -= 1.5f;
         }
         
-        _childRectTransform.DOAnchorMax(newMax, .6f).SetEase(Ease.InBack);
-        _childRectTransform.DOAnchorMin(newMin, .6f).SetEase(Ease.InBack);
+        _childRectTransform.DOAnchorMax(newMax, .6f).SetEase(Ease.InQuad);
+        _childRectTransform.DOAnchorMin(newMin, .6f).SetEase(Ease.InQuad);
 
         if (!isChosen) transform.DORotate(new Vector3(0, -90, 0), .6f);
 

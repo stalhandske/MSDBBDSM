@@ -43,6 +43,7 @@ public class CardSelectionController : MonoBehaviour
     {
         TitleText.text = "Choose Your Touches";
         _spawner.ClearCards();
+        _spawner.exclusiveSelection = false;
         _spawner.Spawn(1, false, 3);
     }
 
@@ -66,6 +67,7 @@ public class CardSelectionController : MonoBehaviour
     {
         TitleText.text = "Choose Your Bondage";
         _spawner.ClearCards();
+        _spawner.exclusiveSelection = false;
         yield return new WaitForSeconds(.6f);
         _spawner.Spawn(0, false, 3);
     }
@@ -90,6 +92,7 @@ public class CardSelectionController : MonoBehaviour
     {
         TitleText.text = "Choose Your Actions";
         _spawner.ClearCards();
+        _spawner.exclusiveSelection = true;
         yield return new WaitForSeconds(.6f);
         _spawner.Spawn(2, false, 3);
     }
