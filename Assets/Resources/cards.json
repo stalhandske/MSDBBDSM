@@ -71,6 +71,146 @@
             "intensity": 2
         },
         {
+            "title": "Whisper My Name",
+            "subInstructions": "Your Dom will whisper in your ear, removing audio blockers if necessary.",
+            "domInstructions": "Remove any audio blockers for the moment, come close to your Sub's ear and whisper their name to them.",
+            "flavor": "",
+            "intensity": 2
+        },
+        {
+            "title": "Hair-stroking",
+            "subInstructions": "Your Dom will stroke your hair or head using one of the sanctioned Touches.",
+            "domInstructions": "Carefully stroke your Sub's hair or head for a few moments.",
+            "flavor": "",
+            "intensity": 2
+        },
+        {
+            "title": "Finger-touch",
+            "subInstructions": "Your Dom will Touch a single finger for a moment.",
+            "domInstructions": "Use a Touch on one of your Sub's fingers.",
+            "flavor": "",
+            "intensity": 1
+        },
+        {
+            "title": "Back Rub",
+            "subInstructions": "You will receive a back rub from your Dom, who'll place their hand on your shoulder first.",
+            "domInstructions": "Place a hand on your Sub's shoulder and give them a gentle back rub. Do so until either one of you seems uncomfortable.",
+            "flavor": "",
+            "intensity": 1
+        },
+        {
+            "title": "A Compliment",
+            "subInstructions": "Your Dom will reassure you with a verbal compliment.",
+            "domInstructions": "Compliment your Sub, such as on their appearance or how well they're doing in this encounter. Temporarily remove audio blockers if necessary.",
+            "flavor": "",
+            "intensity": 0
+        },
+        {
+            "title": "Robing",
+            "subInstructions": "Your Dom will place a jacket over your shoulders - or adjust it if you're already wearing one.",
+            "domInstructions": "Place a jacket over your Sub's shoulders, or adjust the one they're already wearing to ensure a comfy fit.",
+            "flavor": "",
+            "intensity": 0
+        },
+        {
+            "title": "A Hug",
+            "subInstructions": "Your Dom will hug you.",
+            "domInstructions": "Embrace your Sub in a meaningful hug.",
+            "flavor": "",
+            "intensity": 1
+        },
+        {
+            "title": "Foot Tap",
+            "subInstructions": "Your Dom will tap one of your feet a few times.",
+            "domInstructions": "Tap your Sub's feet a few times, using whichever is the most solid of sanctioned Touches.",
+            "flavor": "",
+            "intensity": 0
+        },
+        {
+            "title": "Hold My Gaze",
+            "subInstructions": "Your Dom will meet your gaze for at least 10 seconds, removing your blindfold if applicable.",
+            "domInstructions": "Temporarily remove any blindfold, and look into your Sub's eyes. Smile softly if you prefer, but hold the gaze for at least 10 seconds even if your Sub tries to look away.",
+            "flavor": "",
+            "intensity": 1
+        },
+        {
+            "title": "Earlobe Touch",
+            "subInstructions": "Your Dom will touch your earlobe.",
+            "domInstructions": "Touch your Sub's earlobe for a few moments.",
+            "flavor": "",
+            "intensity": 2
+        },
+        {
+            "title": "Twirl",
+            "subInstructions": "Your Dom will twirl you as though in a dance, careful of any bonds.",
+            "domInstructions": "Take your Sub's hand - or hands, if wrist-bound - and raise above their head. Guide them around a complete turn, being careful of any ankle constraints.",
+            "flavor": "",
+            "intensity": 0
+        },
+        {
+            "title": "Hand-clasp",
+            "subInstructions": "Your Dom will take both your hands and hold them for a while.",
+            "domInstructions": "Take and hold both your Sub's hands for a few moments.",
+            "flavor": "",
+            "intensity": 1
+        },
+        {
+            "title": "Hands to Face",
+            "subInstructions": "Your Dom will whisper a greeting and place their hands on your face for a few moments.",
+            "domInstructions": "Whisper 'hello', and gently place your palms on your Sub's cheeks for a few moments.",
+            "flavor": "",
+            "intensity": 1
+        },
+        {
+            "title": "Nose Boop",
+            "subInstructions": "Your Dom will playfully 'boop' your nose with a Touch.",
+            "domInstructions": "Use a Touch to playfully tap the tip of your Sub's nose.",
+            "flavor": "",
+            "intensity": 0
+        },
+        {
+            "title": "Eyebrow Trace",
+            "subInstructions": "Your Dom will trace the line of your eyebrows with a Touch.",
+            "domInstructions": "Use a Touch to slowly and carefully trace the line of your Sub's eyebrows.",
+            "flavor": "",
+            "intensity": 2
+        },
+        {
+            "title": "Head Waves",
+            "subInstructions": "Your Dom will bring their hands close to your head, as though stroking your 'aura'.",
+            "domInstructions": "Stand behind or to the side of your Sub and slowly wave your hands around their head, as though stroking their 'aura'. Do not touch their head.",
+            "flavor": "",
+            "intensity": 0
+        },
+        {
+            "title": "Tables Turned",
+            "subInstructions": "Your Dom will give a playful glimpse into their side of the experience.",
+            "domInstructions": "Temporarily remove any blindfold, and show the tablet screen to your Sub. Move the tablet around like a hairdresser showing a finished cut.",
+            "flavor": "",
+            "intensity": 0
+        },
+        {
+            "title": "Share a Memory",
+            "subInstructions": "Your Dom will let you in on a treasured memory.",
+            "domInstructions": "Remove any audio blockers, and share a pleasant memory with your Sub. Speak softly. The more gentle and intimate the memory, the better.",
+            "flavor": "",
+            "intensity": 0
+        },
+        {
+            "title": "Arm Rub",
+            "subInstructions": "Your Dom will gently rub your upper arm with their palm.",
+            "domInstructions": "Gently rub your Sub's upper arm for at least a few strokes, using your palm.",
+            "flavor": "",
+            "intensity": 1
+        },
+        {
+            "title": "Belly Rub",
+            "subInstructions": "Your Dom will make themselves known before gently rubbing your belly with their hand.",
+            "domInstructions": "Stand to the side of your Sub and whisper 'belly', before gently rubbing them there for a short time.",
+            "flavor": "",
+            "intensity": 2
+        },
+        {
             "title": "Just Smile",
             "subInstructions": "Your Dom will smile at you, removing the blindfold if one was sanctioned.",
             "domInstructions": "Tell the sub that you will remove the blindfold for a moment now.",
@@ -124,6 +264,13 @@
             "intensity": 0
         },
         {
+            "title": "Cotton Pad",
+            "subInstructions": "Consent to your Dom touching you with a soft, cotton pad.",
+            "domInstructions": "Your Sub has consented to you using a cotton pad to touch them.",
+            "flavor": "",
+            "intensity": 0
+        },
+        {
             "title": "Feather",
             "subInstructions": "Consent to your Dom touching you with a feather.",
             "domInstructions": "Your Sub has consented to you using a feather to touch them.",
@@ -132,7 +279,7 @@
         },
         {
             "title": "Hand",
-            "subInstructions": "Consent to your Dom touching you in areas other than your hands with their bare hands and fingers.",
+            "subInstructions": "Consent to your Dom touching you in areas other than your hands and upper arms with their bare hands and fingers.",
             "domInstructions": "Your Sub has consented to you using your hands and fingers to touch them.",
             "flavor": "",
             "intensity": 1
