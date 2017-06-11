@@ -243,7 +243,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: hand over to your partner
+  m_Text: hand over to your Dom
 --- !u!222 &525936774
 CanvasRenderer:
   m_ObjectHideFlags: 0

@@ -1093,8 +1093,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: -400}
+  m_AnchoredPosition: {x: 0, y: 80}
+  m_SizeDelta: {x: -598, y: -239}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1949769221
 MonoBehaviour:
@@ -1128,10 +1128,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Now be ready to pass the device to your Dom. Your Dom will review these
-    cards, and begin the encounter by applying any bonds. You may break the encounter
-    off at any time by saying 'stop', and/or removing any bonds yourself. If instead
-    you'd prefer simply to break off the current activity, say 'let's move on'.
+  m_Text: "Now be ready to pass the device to your Dom. \n\nYour Dom will review these
+    cards, and begin the encounter by applying any bonds. \n\nYou may break the encounter
+    off at any time by saying 'stop', and/or removing any bonds yourself. \n\nIf instead
+    you'd prefer simply to break off the current activity, say 'let's move on'."
 --- !u!222 &1949769222
 CanvasRenderer:
   m_ObjectHideFlags: 0
