@@ -42,7 +42,15 @@ public class CardView : MonoBehaviour, IPointerClickHandler
         _childRectTransform.DOAnchorMin(startMin, .6f).SetEase(Ease.OutQuad);
         yield return new WaitForSeconds(Random.Range(.5f, .6f));
         transform.DORotate(new Vector3(0, 1, 0), .6f).SetEase(Ease.OutFlash);
-        
+        yield return new WaitForSeconds(.6f);
+
+        if (cardData.title == "Blindfold")
+        {
+            Click();
+            this.isClickable = false;
+            if (OnSelect != null)
+                OnSelect(cardData);
+        }
         //transform.DOPunchScale(Vector3.one * .1f, .2f);
     }
 
@@ -54,6 +62,7 @@ public class CardView : MonoBehaviour, IPointerClickHandler
         instructions.text = this.isSub ? card.subInstructions : card.domInstructions;
         flavor.text = card.flavor;
         cardData = card;
+
     }
 
     public void OnPointerClick(PointerEventData eventData)
