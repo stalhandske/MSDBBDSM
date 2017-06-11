@@ -23,8 +23,7 @@ public class ReviewSceneController : MonoBehaviour
         else
         {
             GameManager.Instance.SubViewDone = true;
-            GameManager.Instance.GoToScene("6 - HandOver");
-           
+            GameManager.Instance.GoToScene("5 - AfterReview");
         }
     }
 }
