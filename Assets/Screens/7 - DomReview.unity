@@ -206,10 +206,10 @@ RectTransform:
   m_Father: {fileID: 404616687}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -150, y: 0}
-  m_SizeDelta: {x: 200, y: 100}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 170, y: 0}
+  m_SizeDelta: {x: 414.7, y: 94.4}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &333806013
 MonoBehaviour:
@@ -511,10 +511,10 @@ RectTransform:
   m_Father: {fileID: 404616687}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 180}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 150, y: 0}
-  m_SizeDelta: {x: 200, y: 100}
+  m_AnchorMin: {x: 0, y: 0.5}
+  m_AnchorMax: {x: 0, y: 0.5}
+  m_AnchoredPosition: {x: 528, y: 0}
+  m_SizeDelta: {x: 414.7, y: 94.4}
   m_Pivot: {x: 1, y: 0.5}
 --- !u!114 &878359682
 MonoBehaviour:
@@ -850,10 +850,10 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: b6df86407f8df2344b0f77d70daa6e6e, type: 3}
-    m_FontSize: 61
+    m_FontSize: 85
     m_FontStyle: 0
     m_BestFit: 0
-    m_MinSize: 10
+    m_MinSize: 8
     m_MaxSize: 85
     m_Alignment: 4
     m_AlignByGeometry: 1
@@ -861,7 +861,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Consent
+  m_Text: Accept
 --- !u!222 &1512303404
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1093,8 +1093,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -200, y: -400}
+  m_AnchoredPosition: {x: 0, y: 70.000015}
+  m_SizeDelta: {x: -200, y: -260}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1949769221
 MonoBehaviour:
@@ -1128,18 +1128,13 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Your Sub has consented to the following activities, bonds and Touches.
-    Take a look over them, remove any you feel uncomfortable with, and see if you''d
-    prefer to order them in a certain way. Some activities may require temporary removal
-    of bonds - consider whether you want to stack these alongside each other, or spread
-    them out across the encounter.
-
-
-    If the Sub makes any move to remove their bonds or says ''stop'', the encounter
-    is over. Give them space, and be sure to thank them.
-
-
-    When you are ready, apply the bonds and tap ''start''.'
+  m_Text: "Your Sub has consented to the following activities, bonds and Touches.
+    \n\nTake a look over them, remove any you feel uncomfortable with, and see if
+    you'd prefer to order them in a certain way. \n\nSome activities may require temporary
+    removal of bonds - consider whether you want to stack these alongside each other,
+    or spread them out across the encounter.\n\nIf the Sub makes any move to remove
+    their bonds or says 'stop', the encounter is over. Give them space, and be sure
+    to thank them.\n\nWhen you are ready, apply the bonds and tap 'start'."
 --- !u!222 &1949769222
 CanvasRenderer:
   m_ObjectHideFlags: 0
