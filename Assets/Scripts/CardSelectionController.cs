@@ -16,6 +16,7 @@ public class CardSelectionController : MonoBehaviour
 
     public Text TitleText;
     public int NumActionCards = 4;
+    public ConsentButton consentButton;
 
     private StateMachine<CardSelectionState> _stateMachine;
     private CardSpawner _spawner;
@@ -25,12 +26,14 @@ public class CardSelectionController : MonoBehaviour
     void Start()
     {
         _spawner = FindObjectOfType<CardSpawner>();
+        _spawner.OnChangePick += HandleChangeValidity;
 
         _stateMachine = new StateMachine<CardSelectionState>(); 
         _stateMachine.AddState(CardSelectionState.ChooseBondage, ChooseBondageStart, ChooseBondageUpdate, ChooseBondageStop);
         _stateMachine.AddState(CardSelectionState.ChooseTouch, ChooseTouchStart, ChooseTouchUpdate, ChooseTouchStop);
         _stateMachine.AddState(CardSelectionState.ChooseAction, ChooseActionStart, ChooseActionUpdate, ChooseActionStop);
         _stateMachine.CurrentState = CardSelectionState.ChooseTouch;
+        consentButton.SetActivey(false);
     }
     
     void Update()
@@ -109,6 +112,7 @@ public class CardSelectionController : MonoBehaviour
 
     public void ConsentButtonPressed()
     {
+        consentButton.SetActivey(false);
         switch (_stateMachine.CurrentState)
         {
             case CardSelectionState.ChooseTouch:
@@ -133,5 +137,10 @@ public class CardSelectionController : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    void HandleChangeValidity(bool isValid)
+    {
+        consentButton.SetActivey(isValid);
     }
 }

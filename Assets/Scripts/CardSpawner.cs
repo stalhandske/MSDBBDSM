@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class CardSpawner : MonoBehaviour
 {
+    public System.Action<bool> OnChangePick;
+
     public bool SpawnOnStart;
 
     [Header("Draw from deck or library")]
@@ -140,5 +142,18 @@ public class CardSpawner : MonoBehaviour
                 }
             }
         }
+
+        bool oneCardSelected = false;
+
+        foreach (CardView cardView in _spawnedCards)
+        {
+            if (cardView.isChosen)
+            {
+                oneCardSelected = true;
+            }
+        }
+
+        if (OnChangePick != null)
+            OnChangePick(oneCardSelected);
     }
 }
