@@ -330,7 +330,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 2 - ChooseYourTouchesNew
+          m_StringArgument: 1.5 - Instructions
           m_BoolArgument: 0
         m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
@@ -385,7 +385,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &750468074
 RectTransform:
   m_ObjectHideFlags: 0
@@ -445,7 +445,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 750468076}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 908994167}
+        m_MethodName: PressPlay
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
     m_TypeName: UnityEngine.UI.Button+ButtonClickedEvent, UnityEngine.UI, Version=1.0.0.0,
       Culture=neutral, PublicKeyToken=null
 --- !u!114 &750468076
@@ -861,7 +872,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Start
+  m_Text: Play
 --- !u!222 &1512303404
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1128,15 +1139,10 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'During the course of this encounter, you and your Dom will both explore
-    each other''s bounds in the comfort of consent.
-
-
-    We''ll begin by building your deck for this encounter.
-
-
-    Please select as many as you can, but do pass over anything you would feel truly
-    uncomfortable with.'
+  m_Text: You're about to share an intimate BDSM encounter, in which you will play
+    distinct roles. One of you will be dominant, and active... 'the Dom' - and one
+    will passive, submissive... the 'Sub'. Both of you will respect each other, honour
+    your boundaries, and seek to enjoy these coming moments.
 --- !u!222 &1949769222
 CanvasRenderer:
   m_ObjectHideFlags: 0
