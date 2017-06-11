@@ -43,6 +43,7 @@ public class CardSelectionController : MonoBehaviour
     {
         TitleText.text = "Choose Your Touches";
         _spawner.ClearCards();
+        _spawner.exclusiveSelection = false;
         _spawner.Spawn(1, false, 3);
     }
 
@@ -59,8 +60,15 @@ public class CardSelectionController : MonoBehaviour
     // Choose Bondage State
     void ChooseBondageStart()
     {
+        StartCoroutine(BondageStartCr());
+    }
+
+    IEnumerator BondageStartCr()
+    {
         TitleText.text = "Choose Your Bondage";
         _spawner.ClearCards();
+        _spawner.exclusiveSelection = false;
+        yield return new WaitForSeconds(.6f);
         _spawner.Spawn(0, false, 3);
     }
 
@@ -77,8 +85,15 @@ public class CardSelectionController : MonoBehaviour
     // Choose Actions State
     void ChooseActionStart()
     {
+        StartCoroutine(ActionStartCr());
+    }
+
+    IEnumerator ActionStartCr()
+    {
         TitleText.text = "Choose Your Actions";
         _spawner.ClearCards();
+        _spawner.exclusiveSelection = true;
+        yield return new WaitForSeconds(.6f);
         _spawner.Spawn(2, false, 3);
     }
 
@@ -112,6 +127,7 @@ public class CardSelectionController : MonoBehaviour
                     else
                     {
                         print(Deck.deckTouches.Count + " - " + Deck.deckTouches[0].title);
+                        _stateMachine.CurrentState = CardSelectionState.ChooseAction;
                         SceneManager.LoadScene("4 - SubReview");
                     }
                 }
