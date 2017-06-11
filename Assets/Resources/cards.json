@@ -229,28 +229,21 @@
         {
             "title": "Blindfold",
             "subInstructions": "Consent to being blindfolded during your experience.",
-            "domInstructions": "dom instructions",
+            "domInstructions": "Your Sub has consented to being blindfolded. Apply the garment yourself, and check for a good fit.",
             "flavor": "",
             "intensity": 1
         },
         {
             "title": "Audio Isolation",
             "subInstructions": "Consent to having sounds quietened by earplugs or noise-cancelling earphones. It's best if you can provide your own.",
-            "domInstructions": "dom instructions",
+            "domInstructions": "Your Sub has consented to some auditory exclusion. Allow them to don or insert their own earphones or earplugs.",
             "flavor": "",
             "intensity": 1
         },
         {
-            "title": "Wrist Binding",
-            "subInstructions": "Consent to having your wrists comfortably bound.",
-            "domInstructions": "Your Sub has consented to having their wrists bound. Check that any binding is comfortable for them.",
-            "flavor": "",
-            "intensity": 2
-        },
-        {
-            "title": "Ankle Binding",
-            "subInstructions": "Consent to having your ankles comfortably bound.",
-            "domInstructions": "Your Sub has consented to having their ankles bound. Check that any binding is comfortable for them.",
+            "title": "Bondage",
+            "subInstructions": "Consent to having your wrists and/or ankles comfortably bound. Tell your Dom if you have a preference.",
+            "domInstructions": "Your Sub has consented to having their wrists and/or ankles bound. Check that they're comfortable with both, and thatany binding is comfortable for them.",
             "flavor": "",
             "intensity": 2
         }
