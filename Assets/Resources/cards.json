@@ -228,7 +228,7 @@
     "bondageCards": [
         {
             "title": "Blindfold",
-            "subInstructions": "Consent to being blindfolded during your experience.",
+            "subInstructions": "Mandatory.\n\nConsent to being blindfolded during your experience.",
             "domInstructions": "Your Sub has consented to being blindfolded. Apply the garment yourself, and check for a good fit.",
             "flavor": "",
             "intensity": 1
@@ -264,25 +264,11 @@
             "intensity": 0
         },
         {
-            "title": "Feather",
-            "subInstructions": "Consent to your Dom touching you with a feather.",
-            "domInstructions": "Your Sub has consented to you using a feather to touch them.",
-            "flavor": "",
-            "intensity": 1
-        },
-        {
             "title": "Hand",
             "subInstructions": "Consent to your Dom touching you in areas other than your hands and upper arms with their bare hands and fingers.",
             "domInstructions": "Your Sub has consented to you using your hands and fingers to touch them.",
             "flavor": "",
             "intensity": 1
-        },
-        {
-            "title": "Tongue",
-            "subInstructions": "Consent to your Dom using their tongue to touch you.",
-            "domInstructions": "Your Sub has consented to you using your tongue to touch them.",
-            "flavor": "",
-            "intensity": 2
         }
     ]
 }

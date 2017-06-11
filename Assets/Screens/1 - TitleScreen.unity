@@ -921,7 +921,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BDS<color=#0000>MSDB</color>
+  m_Text: BDSM<color=#0000>SDB</color>
 --- !u!222 &525936774
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2381,7 +2381,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: BDSM<color=#0000>SDB</color>
+  m_Text: BDS<color=#0000>MSDB</color>
 --- !u!222 &1894568707
 CanvasRenderer:
   m_ObjectHideFlags: 0

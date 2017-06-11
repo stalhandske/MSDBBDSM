@@ -62,7 +62,8 @@ public class CardView : MonoBehaviour, IPointerClickHandler
         instructions.text = this.isSub ? card.subInstructions : card.domInstructions;
         flavor.text = card.flavor;
         cardData = card;
-
+        if (!isClickable)
+            heartImage.enabled = true;
     }
 
     public void OnPointerClick(PointerEventData eventData)
