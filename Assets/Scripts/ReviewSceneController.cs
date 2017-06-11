@@ -1,7 +1,6 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class ReviewSceneController : MonoBehaviour
 {
@@ -17,8 +16,11 @@ public class ReviewSceneController : MonoBehaviour
 			GameManager.Instance.SubViewDone = true;
     }
 	
-    void Update()
+    public void GoToScene()
     {
-		
+    	if (GameManager.Instance.SubViewDone)
+    		GameManager.Instance.GoToScene("1 - TitleScreen");
+    	else
+    		GameManager.Instance.GoToScene("6 - HandOver");
     }
 }
