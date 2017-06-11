@@ -50,4 +50,11 @@ public static class Deck
     {
         deck.AddRange(cards);
     }
+
+    public static void Clear()
+    {
+        deckActions.Clear();
+        deckBondages.Clear();
+        deckTouches.Clear();
+    }
 }

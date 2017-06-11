@@ -14,12 +14,17 @@ public class ReviewSceneController : MonoBehaviour
 	
     public void GoToScene()
     {
-    	if (GameManager.Instance.SubViewDone)
+        if (GameManager.Instance.SubViewDone)
+        {
+            Deck.Clear();
+            GameManager.Instance.SubViewDone = false;
             GameManager.Instance.GoToScene("1 - TitleScreen");
+        }
         else
-            GameManager.Instance.GoToScene("6 - HandOver");
-
-        if (!GameManager.Instance.SubViewDone)
+        {
             GameManager.Instance.SubViewDone = true;
+            GameManager.Instance.GoToScene("6 - HandOver");
+           
+        }
     }
 }
