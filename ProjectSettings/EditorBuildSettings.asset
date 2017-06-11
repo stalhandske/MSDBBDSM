@@ -10,16 +10,13 @@ EditorBuildSettings:
     guid: 9aaab27e3216c445fbf28a1cf555daf3
   - enabled: 1
     path: Assets/Screens/1.5 - Instructions.unity
-    guid: 00000000000000000000000000000000
+    guid: 6e052526c29874842a45559b041ad991
   - enabled: 1
     path: Assets/Screens/2 - ChooseYourTouchesNew.unity
     guid: 148543d69efafac4b8477cc02dd714fb
   - enabled: 1
     path: Assets/Screens/4 - SubReview.unity
     guid: ac5b85bd51faa1d43bbf1bb87b1b99df
-  - enabled: 1
-    path: Assets/Screens/5 - DomViewLandscape.unity
-    guid: 1cf0fd82175d2e640b99ac076c08711f
   - enabled: 1
     path: Assets/Screens/6 - HandOver.unity
     guid: ad21550cdc60c431f85887da67462111
